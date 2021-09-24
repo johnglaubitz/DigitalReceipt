@@ -1,6 +1,7 @@
 PostalAddress:
   description: |
-    A postal address data structure.
+    physical address used by delivery services to deliver mail, packages or 
+    other physical goods and correspondence
   type: object
   properties:
     typeCode:
