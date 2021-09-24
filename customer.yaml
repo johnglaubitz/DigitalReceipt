@@ -1,7 +1,7 @@
 Customer:
   description: |
-    A company or individual who purchases, may purchase, or did purchase |
-    goods and/or servicies from retailer.
+    one who purchases or receives a good, service or right from a business 
+    or merchant, or intends to do so.
   type: object
   properties:
     customerID:
@@ -60,7 +60,7 @@ Customer:
       description: |
         Collection of Customer's identifications.
       $ref: "common.yaml#/GovernmentIdentificationCollection"
-    companyName:
+    employerName:
       description: |
         Name of the company the Customer works for.
       type: string
