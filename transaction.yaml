@@ -1,16 +1,9 @@
-DigitalReceipt:
+Transaction:
   description: |
-    A pure subset of Transction that contains the necessary data
-    elements for customer facing receipts and fiscal audit.
-    Transaction is a self-contained unit of essential business activity.
-    The activity involves important business such as financial
-    and/or merchandise exchange, movement of money and/or inventory,
-    creation or modification of business documents, granting access to a
-    device, etc. As any activity, a transaction begins and ends at specific
-    points in time and can be associated with a particular performing
-    Operator for accountability and audit purposes. A transaction usually
-    takes some time and its completion time is considered the actual time
-    of the transaction. Once completed, transactions are immutable.
+    An essential business activity that represents an auditable unit of work. 
+    In retail this includes exchanges or transfers of Items including goods, services, 
+    tenders, rights, or commitments as well as other important business 
+    events essential for audit and retail operations management.
   type: object
   properties:
     transactionID:
@@ -74,6 +67,10 @@ DigitalReceipt:
         businesses.
       type: string
       format: date
+    businessDayID:
+      description: |
+        unique business day identifier
+      type: string  
     timezoneOffsetInMinutes:
       description: |
         The time difference in minutes between UTC and place of transaction.
