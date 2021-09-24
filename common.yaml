@@ -1,6 +1,6 @@
 PersonName:
   description: |
-    A set of words by which a person is known, addressed or referred to.
+    designation by which someone is known in some context
   type: object
   properties:
     firstName:
